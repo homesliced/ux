@@ -499,6 +499,10 @@ iframe, object, embed {
 
 .two-col-img img {
 	max-width: 100%;
+	border: 1px solid #cfcfd0;
+	border-radius: 10px;
+	padding: 3%;
+	margin-bottom: 2%;
 }
 
 #aboutwrap {	
