@@ -1,0 +1,580 @@
+/*
+ * Author: Carlos Alvarez
+ * URL: http://Alvarez.is
+ *
+ * Project Name: NYC Design
+ * Version: 1.0
+ * Date: 04-20-2014
+ * URL: 
+ */
+
+
+/* ==========================================================================
+   Base Styles, Bootstrap Modifications & Fonts Import
+   ========================================================================== */
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+a {
+	color: SteelBlue;
+}
+
+::-moz-selection {
+    background: #f2c2c9;
+    color: #a4003a;
+    text-shadow: none;
+}
+
+::selection {
+    background: #16a085;
+    color: #a4003a;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.centered {
+	text-align: center
+}
+
+.mt {
+	margin-top: 80px;
+}
+
+.mb {
+	margin-bottom: 80px;
+}
+
+/* ==========================================================================
+   General styles
+   ========================================================================== */
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+    color: #4a4a4a;
+}
+
+
+.navbar-brand {
+	font-weight: 700;
+}
+
+.navbar-default .navbar-brand {
+	/*color: #1abc9c;*/
+	color: white;
+}
+
+.navbar-default {
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: white;
+	background-color: transparent;
+	border-bottom: 2px solid white
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: white;
+}
+
+.navbar-t2r {
+	color: white;
+}
+
+/* ==========================================================================
+   Wrap Sections
+   ========================================================================== */
+
+#headerwrap {
+	background: url(../img/bart.gif) no-repeat center top;
+	margin-top: -70px;
+	padding-top: 250px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 650px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#headerwrap h1 {
+	color:#ffffff;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	letter-spacing: 4px;
+	font-size: 80px;
+	font-weight: bold;
+}
+
+#headerwrap h4 {
+	font-weight: 400;
+	color: #ffffff
+}
+
+#social {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #f2f2f2;
+}
+
+#social i {
+	font-size: 40px;
+	color: #4a4a4a
+}
+
+#social i:hover {
+	color: #1abc9c
+}
+
+#footerwrap {
+	padding-top: 70px;
+	padding-bottom: 50px;
+	background-color: #2f2f2f;
+}
+
+#footerwrap p {
+	color: #f2f2f2;
+	margin-left: 10px;
+}
+
+/* T2R */
+
+#t2rwrap {	
+	background: url(../img/work.jpg) no-repeat center top;
+	margin-top: -70px;
+	padding-top: 250px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 650px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#t2rwrap h1 {
+	color:#ffffff;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	letter-spacing: 4px;
+	font-size: 80px;
+	font-weight: bold;
+}
+
+#t2rwrap h2 {
+	color: #ffffff;
+}
+
+#t2rwrap h4 {
+	font-weight: 400;
+	color: #ffffff
+}
+
+#t2rwrap {	
+	background: url(../img/chalk-logo.jpg) no-repeat center top;
+	margin-top: -75px;
+	padding-top: 250px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 650px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#t2rwrap h1 {
+	color:#ffffff;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	letter-spacing: 4px;
+	font-size: 80px;
+	font-weight: bold;
+}
+
+#t2rwrap h4 {
+	font-weight: 400;
+	color: #ffffff
+}
+
+.measure {
+  background: #dbdbdb;
+  display: inline-block;
+  color: #4f4f4f;
+  padding: 1% 3% 1% 3%;
+  border-radius: 2px;
+  margin: 0 30px 13px 0;
+  letter-spacing: .5px;
+}
+
+iframe, object, embed {
+        max-width: 100%;
+        margin-bottom: 3%;
+}
+
+#t2r h1{
+	color: seagreen;
+}
+
+#t2r h2 {
+	color: seagreen;
+}
+
+#t2r h3 {
+	color: seagreen;
+}
+
+#t2r h4 {
+	color: seagreen;
+}
+
+.quote {
+	font-style: italic;
+}
+
+
+.caption:last-child {
+    margin-right: 0;
+}
+
+.caption p {
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 90%;
+    line-height: 1.5;
+    color: black;
+}
+
+.caption-margin p{
+    font-family: "Nunito", sans-serif;;
+    font-weight: 400;
+    font-size: 80%;
+    line-height: 1;
+    color: black;
+}
+/* end T2R */
+
+
+/* maestro */
+
+#maestrowrap {	
+	background: url(../img/maestro-large.png) no-repeat center top;
+	margin-top: -75px;
+	padding-top: 400px;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 650px;
+	z-index: 100;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#maestrowrap h1 {
+	color:#4a4a4a;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	letter-spacing: 4px;
+	font-size: 80px;
+	font-weight: bold;
+}
+
+#maestrowrap h2 {
+	margin-top: 10px;
+}
+
+#maestrowrap h4 {
+	font-weight: 400;
+	color: #4a4a4a;
+}
+
+#maestro h1{
+	color: #20407c;
+}
+
+#maestro h2 {
+	color: #20407c;
+}
+
+#maestro h3 {
+	color: #20407c;
+}
+
+#maestro h4 {
+	color: #20407c;
+}
+
+.iterations img {
+	max-height: 500px;
+}
+.top-margin {
+	margin-top: 100px;
+}
+/* end maestro */
+
+
+/* life-alert */
+
+#lifealertwrap {	
+	background: url(../img/life-alert-hero.png) no-repeat center top;
+	margin-top: -75px;
+	padding-top: 400px;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 650px;
+	z-index: 100;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#lifealertwrap h1 {
+	color: white;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	letter-spacing: 4px;
+	font-size: 80px;
+	font-weight: bold;
+}
+
+#lifealertwrap h2 {
+	margin-top: 10px;
+	color: white;
+}
+#lifealertwrap h3 {
+	margin-top: 10px;
+	color: white;
+}
+#lifealertwrap h4 {
+	font-weight: 400;
+	color: white;
+}
+
+#lifealert h1{
+	color: darkred;
+}
+
+#lifealert h2 {
+	color: darkred;
+}
+
+#lifealert h3 {
+	color: darkred;
+}
+
+#lifealert h4 {
+	color: darkred;
+}
+
+.iterations img {
+	max-height: 500px;
+}
+.top-margin {
+	margin-top: 100px;
+}
+/* end lifealert */
+
+/* case study */
+
+.projects {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.case-study {
+	font-size: 90%;
+	margin-left: 3%;
+}
+
+.case-study img {
+	max-width: 800px;
+}
+
+.mt-c {
+	margin-top: 30px;
+}
+
+.mb-c {
+	margin-bottom: 30px;
+}
+
+.highlighted {
+	font-weight: 700;
+}
+
+.img-col2 {
+    width: 42%;
+    height: 240px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    margin-right: 5%;
+}
+.img-col2 img {
+    position: absolute;
+    top: 10;
+    left: 0;
+    width: 100%;
+}
+
+.two-col-img img {
+	max-width: 100%;
+}
+
+#aboutwrap {	
+	background: url(../img/about.jpg) no-repeat center top;
+	margin-top: -40px;
+	padding-top: 150px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 550px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+/* buttons */
+.btn-primary.raised {
+    box-shadow: 0 3px 0 0 #007299;
+}
+
+.btn-primary.raised:active, .btn-primary.raised.active {
+    background: #33a6cc;
+    box-shadow: none;
+    margin-bottom: -3px;
+    margin-top: 3px;
+}
+
+
+
+/* Gallery */
+.gallery {
+	margin-top: 30px;
+}
+
+.gallery img:hover {
+	opacity: 0.4;
+}
+
+
+/* Video */
+#sketching {
+	position: relative;
+	overflow: hidden;
+}
+
+#sketching .content {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+/* journeymap */
+/* This container element gives us the scrollbars we want. */
+div.horizontal {
+    width: 90%;
+    height: 600px;
+    overflow: auto;
+}
+
+.horizontal img {
+	max-height: 580px;
+}
+
+/* table-layout: fixed does a lot of the magic, here. It makes sure that the "table cells" retain the pixel dimensions you want.*/
+.table {
+    display: table;
+    table-layout: fixed;
+    width: 90%;
+}
+
+/* Arranging your content inside the "cells" is as simple as using the vertical-align and text-align properties. Floats work, too. */
+article {
+    width: 600px;
+    height: 600px;
+    display: table-cell;
+    background: #e3e3e3;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* Some styling for contrast. */
+article:nth-child(2n+2)
+{
+    background: #d1d1d1;
+}
