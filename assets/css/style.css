@@ -281,6 +281,10 @@ iframe, object, embed {
 	color: seagreen;
 }
 
+.train img {
+	max-height: 160px;
+}
+
 .quote {
 	font-style: italic;
 }
