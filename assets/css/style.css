@@ -430,8 +430,12 @@ iframe, object, embed {
 	color: darkred;
 }
 
-.iterations img {
-	max-height: 500px;
+.sketch-6 img {
+	max-height: 300px;
+}
+
+.sketch-4 img {
+	max-height: 350px;
 }
 .top-margin {
 	margin-top: 100px;
