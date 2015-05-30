@@ -1,5 +1,39 @@
 var window_size = window.matchMedia('(max-width: 800px)');
 $(function($) {
+
+  // get the value of the bottom of the #main element by adding the offset of that element plus its height, set it as a variable
+  var indexbottom = $('#headerwrap').offset().top + $('#headerwrap').height();
+
+
+
+  function scrollnav(wrapper, wrapperStyle){
+    // we round here to reduce a little workload
+    stop = Math.round($(window).scrollTop());
+    if (stop > wrapper) {
+        $('.navbar-nav').addClass(wrapperStyle);
+        $('.navbar-default').addClass(wrapperStyle);
+    } else {
+        $('.navbar-nav').removeClass(wrapperStyle);
+        $('.navbar-default').addClass(wrapperStyle);
+    };
+  }
+
+  // on scroll, 
+  $(window).on('scroll',function(){
+      scrollnav(indexbottom, 'scrolled-index');
+
+      // // we round here to reduce a little workload
+      // stop = Math.round($(window).scrollTop());
+      // if (stop > mainbottom) {
+      //     $('.navbar-nav').addClass('scrolled');
+      //     $('.navbar-default').addClass('scrolled');
+      // } else {
+      //     $('.navbar-nav').removeClass('scrolled');
+      //     $('.navbar-default').addClass('scrolled');
+      // }
+
+  });
+
   if (window.matchMedia('(max-width: 800px)').matches)
   {
     $('.beta img').click(function(){
