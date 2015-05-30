@@ -76,6 +76,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+#topnav {
+	background-color: #333;
+	height: 60px;
+	-khtml-opacity:.40; 
+	 -moz-opacity:.40; 
+	 -ms-filter:”alpha(opacity=40)”;
+	  filter:alpha(opacity=40);
+	  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.4);
+	  opacity:.40; 
+}
+
 .navbar-brand {
 	font-weight: 700;
 }
@@ -108,10 +119,51 @@ h1, h2, h3, h4, h5, h6 {
    Wrap Sections
    ========================================================================== */
 
-#headerwrap {
-	background: url(../img/bart.gif) no-repeat center top;
+#headerstillwrap {
+	background: url(../img/back.png) no-repeat center top;
 	margin-top: -70px;
 	padding-top: 250px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 650px;
+	width: 100%;
+	
+   -webkit-background-size: 100%;
+   -moz-background-size: 100%;
+   -o-background-size: 100%;
+   background-size: 100%;
+
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+#headerstillwrap h1 {
+	color:#ffffff;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	letter-spacing: 4px;
+	font-size: 80px;
+	font-weight: bold;
+}
+
+#headerstillwrap h3 {
+	font-weight: 400;
+	color: #ffffff;
+}
+
+#headerstillwrap h4 {
+	font-weight: 400;
+	color: #ffffff;
+}
+
+#headerwrap {
+	/*background: url(../img/bart.png) no-repeat center top;*/
+	background-color: steelblue;
+	margin-top: -70px;
+	padding-top: 220px;
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
@@ -282,7 +334,7 @@ iframe, object, embed {
 }
 
 .train img {
-	max-height: 160px;
+	max-height: 120px;
 }
 
 .quote {
@@ -465,8 +517,13 @@ iframe, object, embed {
 	margin: 0 auto;
 }
 
+.projects-t2r {
+	width: 60%;
+	margin: 0 auto;
+}
+
 .case-study {
-	font-size: 90%;
+	font-size: 100%;
 	margin-left: 3%;
 }
 
@@ -484,6 +541,12 @@ iframe, object, embed {
 
 .highlighted {
 	font-weight: 700;
+}
+
+.emphasized {
+	font-size: 1.4em;
+	line-height: 1.8em;
+	font-weight: 600;
 }
 
 .img-col2 {
@@ -506,6 +569,13 @@ iframe, object, embed {
 	border: 1px solid #cfcfd0;
 	border-radius: 10px;
 	padding: 3%;
+	margin-bottom: 2%;
+}
+
+.two-col-img-unlined img {
+	max-width: 100%;
+	padding: 1%;
+	margin-left: -5px;
 	margin-bottom: 2%;
 }
 
@@ -564,8 +634,8 @@ iframe, object, embed {
   height: 100%;
 }
 
-#resume .navbar-default .navbar-brand {
-	/*color: #1abc9c;*/
+/*#resume .navbar-default .navbar-brand {
+	color: #1abc9c;
 	color: #333;
 }
 
@@ -577,7 +647,7 @@ iframe, object, embed {
 
 #resume .navbar-default .navbar-nav > li > a {
 	color: #333;
-}
+}*/
 
 
 
