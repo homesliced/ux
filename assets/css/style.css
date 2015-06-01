@@ -16,7 +16,7 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 a {
-	color: SteelBlue;
+	color: rgb(14, 100, 152);
 }
 
 ::-moz-selection {
@@ -77,23 +77,25 @@ h1, h2, h3, h4, h5, h6 {
 
 
 #topnav {
-/*	background-color: white;
-	height: 60px;
-	-khtml-opacity:.60; 
-	 -moz-opacity:.60; 
-	 -ms-filter:”alpha(opacity=60)”;
-	  filter:alpha(opacity=60);
-	  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.6);
-	  opacity:.60; */
+/*	background: rgb(115, 115, 115);  Fallback for older browsers without RGBA-support 
+	background: rgba(115, 115, 115, 0.5);
+	height: 60px;*/
+/*	-khtml-opacity:.40; 
+	 -moz-opacity:.40; 
+	 -ms-filter:”alpha(opacity=40)”;
+	  filter:alpha(opacity=40);
+	  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.4);
+	  opacity:.40; */
 }
 
 .navbar-brand {
 	font-weight: 700;
+	letter-spacing: 1px;
 }
 
 .navbar-default .navbar-brand {
 	/*color: #1abc9c;*/
-	color: white;
+	color: rgb(193, 193, 193);
 }
 
 .navbar-default {
@@ -102,20 +104,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color: white;
+	color: rgb(193, 193, 193);
+	/*font-weight: 700;*/
+	letter-spacing: 1px;
+	/*text-transform: uppercase;*/
 	background-color: transparent;
-	border-bottom: 2px solid white;
+	border-bottom: 2px solid rgb(193, 193, 193);
 }
 
 .navbar-default .navbar-nav > li > a {
-	color: white;
+	color: rgb(193, 193, 193);;
 }
 
 .navbar-t2r {
-	color: white;
+	color: rgb(193, 193, 193);;
 }
 
-.scrolled-index {
+/*.scrolled-index {
 	background-color: steelblue;
 }
 
@@ -138,7 +143,7 @@ h1, h2, h3, h4, h5, h6 {
 .scrolled-resume {
 	background-color: white;
 	color: #333;
-}
+}*/
 
 /* ==========================================================================
    Wrap Sections
@@ -186,7 +191,12 @@ h1, h2, h3, h4, h5, h6 {
 
 #headerwrap {
 	/*background: url(../img/bart.png) no-repeat center top;*/
-	background-color: steelblue;
+	background-color: darkturquoise;
+  background-image:
+    linear-gradient(
+      darkturquoise, midnightblue
+    );
+	/*background-color: steelblue;*/
 	margin-top: -70px;
 	padding-top: 220px;
 	text-align:center;
