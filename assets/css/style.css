@@ -1,14 +1,3 @@
-/*
- * Author: Carlos Alvarez
- * URL: http://Alvarez.is
- *
- * Project Name: NYC Design
- * Version: 1.0
- * Date: 04-20-2014
- * URL: 
- */
-
-
 /* ==========================================================================
    Base Styles, Bootstrap Modifications & Fonts Import
    ========================================================================== */
@@ -75,26 +64,12 @@ h1, h2, h3, h4, h5, h6 {
     color: #4a4a4a;
 }
 
-
-#topnav {
-/*	background: rgb(115, 115, 115);  Fallback for older browsers without RGBA-support 
-	background: rgba(115, 115, 115, 0.5);
-	height: 60px;*/
-/*	-khtml-opacity:.40; 
-	 -moz-opacity:.40; 
-	 -ms-filter:”alpha(opacity=40)”;
-	  filter:alpha(opacity=40);
-	  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.4);
-	  opacity:.40; */
-}
-
 .navbar-brand {
 	font-weight: 700;
 	letter-spacing: 1px;
 }
 
 .navbar-default .navbar-brand {
-	/*color: #1abc9c;*/
 	color: rgb(193, 193, 193);
 }
 
@@ -105,9 +80,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
 	color: rgb(193, 193, 193);
-	/*font-weight: 700;*/
 	letter-spacing: 1px;
-	/*text-transform: uppercase;*/
 	background-color: transparent;
 	border-bottom: 2px solid rgb(193, 193, 193);
 }
@@ -120,18 +93,15 @@ h1, h2, h3, h4, h5, h6 {
 	color: rgb(193, 193, 193);;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 570px) {
 	.navbar-collapse {
 		background-color: rgb(204, 204, 204);
 	}
 
 	.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
 		color: rgb(71, 78, 82);
-		/*font-weight: 700;*/
 		letter-spacing: 1px;
-		/*text-transform: uppercase;*/
 		background-color: transparent;
-		/*border-bottom: 2px solid rgb(71, 78, 82);*/
 	}
 
 	.navbar-default .navbar-nav > li > a {
@@ -140,43 +110,17 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-/*.scrolled-index {
-	background-color: steelblue;
-}
-
-.scrolled-about {
-	background-color: #a8a8a8;
-}
-
-.scrolled-maestro {
-	background-color: #a69d8c;
-}
-
-.scrolled-lifealert {
-	background-color: black;
-}
-
-.scrolled-t2r {
-	background-color: #395236;
-}
-
-.scrolled-resume {
-	background-color: white;
-	color: #333;
-}*/
 
 /* ==========================================================================
    Wrap Sections
    ========================================================================== */
 
 #headerwrap {
-	/*background: url(../img/bart.png) no-repeat center top;*/
 	background-color: darkturquoise;
   background-image:
     linear-gradient(
       darkturquoise, midnightblue
     );
-	/*background-color: steelblue;*/
 	margin-top: -70px;
 	padding-top: 220px;
 	text-align:center;
@@ -185,15 +129,15 @@ h1, h2, h3, h4, h5, h6 {
 	min-height: 650px;
 	width: 100%;
 	
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #headerwrap h1 {
@@ -213,6 +157,23 @@ h1, h2, h3, h4, h5, h6 {
 
 	#headerwrap h1 {
 		font-size: 2.2em;
+	}
+
+	#headerwrap h3 {
+		font-size: 1.1em;
+		width: 80%;
+		margin-left: 10%;
+	}
+}
+
+@media (max-width: 570px) {
+  #headerwrap {
+  	min-height: 400px;
+  	padding-top: 120px;
+  }
+
+	#headerwrap h1 {
+		font-size: 2em;
 	}
 
 	#headerwrap h3 {
@@ -260,6 +221,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* T2R */
 
+
+
 #t2rwrap {	
 	background: url(../img/chalk-logo.jpg) no-repeat center top;
 	margin-top: -75px;
@@ -303,6 +266,13 @@ h1, h2, h3, h4, h5, h6 {
 #t2rwrap h4 {
 	font-weight: 400;
 	color: #ffffff
+}
+
+@media (max-width: 570px) {
+  #t2rwrap {
+  	min-height: 400px;
+  	padding-top: 120px;
+  }
 }
 
 .measure {
@@ -379,15 +349,15 @@ iframe, object, embed {
 	z-index: 100;
 	width: 100%;
 	
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #maestrowrap h1 {
@@ -424,6 +394,30 @@ iframe, object, embed {
 	color: #20407c;
 }
 
+@media (max-width: 570px) {
+  #maestrowrap {
+  	min-height: 400px;
+  }
+
+  #maestrowrap h1 {
+  	color:#4a4a4a;
+  	padding-top: 400px;
+  	padding-bottom: 20px;
+  	letter-spacing: 4px;
+  	font-size: 80px;
+  	font-weight: bold;
+  }
+
+  #maestrowrap h2 {
+  	margin-top: 10px;
+  }
+
+  #maestrowrap h4 {
+  	font-weight: 400;
+  	color: #4a4a4a;
+  }
+}
+
 .body-text {
 	color: #333;
 	font-family: 'Montserrat', sans-serif;
@@ -452,15 +446,15 @@ iframe, object, embed {
 	z-index: 100;
 	width: 100%;
 	
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #lifealertwrap h1 {
@@ -485,6 +479,12 @@ iframe, object, embed {
 	color: white;
 }
 
+@media (max-width: 570px) {
+  #lifealertwrap {
+  	min-height: 450px;
+  }
+}
+
 #lifealert h1{
 	color: darkred;
 }
@@ -505,6 +505,20 @@ iframe, object, embed {
 	max-height: 300px;
 }
 
+
+@media (max-width: 480px) {
+	.sketch-6 img {
+		max-height: 200px;
+	}
+}
+
+@media (max-width: 570px) {
+	.sketch-6 img {
+		max-height: 200px;
+	}
+}
+
+
 .sketch-4 img {
 	max-height: 350px;
 }
@@ -516,7 +530,7 @@ iframe, object, embed {
 /* case study */
 
 .projects {
-	width: 70%;
+	width: 64%;
 	margin: 0 auto;
 }
 
@@ -525,6 +539,13 @@ iframe, object, embed {
 		width: 96%;
 		margin: 0 auto;
 	}
+}
+
+@media (max-width: 570px) {
+  .projects {
+  	width: 94%;
+  	margin: 0 auto;
+  }
 }
 
 
@@ -541,12 +562,18 @@ iframe, object, embed {
 }
 
 .case-study img {
-	max-width: 800px;
+	max-width: 98%;
 }
 
 @media (max-width: 480px) {
 	.case-study img {
-		max-width: 320px;
+		max-width: 300px;
+	}
+}
+
+@media (max-width: 570px) {
+	.case-study img {
+		max-width: 480px;
 	}
 }
 
@@ -696,20 +723,21 @@ iframe, object, embed {
 /* journeymap */
 /* This container element gives us the scrollbars we want. */
 div.horizontal {
-    width: 90%;
+    width: 98%;
     height: 600px;
     overflow: auto;
 }
 
 .horizontal img {
 	max-height: 580px;
+	margin-top: -2%;
 }
 
 /* table-layout: fixed does a lot of the magic, here. It makes sure that the "table cells" retain the pixel dimensions you want.*/
 .table {
     display: table;
     table-layout: fixed;
-    width: 90%;
+    width: 85%;
 }
 
 /* Arranging your content inside the "cells" is as simple as using the vertical-align and text-align properties. Floats work, too. */
