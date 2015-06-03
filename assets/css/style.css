@@ -534,6 +534,10 @@ iframe, object, embed {
 	margin: 0 auto;
 }
 
+.testimonial {
+  text-align: right;
+}
+
 @media (max-width: 480px) {
 	.projects {
 		width: 96%;
