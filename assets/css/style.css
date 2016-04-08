@@ -122,11 +122,11 @@ h1, h2, h3, h4, h5, h6 {
       darkturquoise, midnightblue
     );
 	margin-top: -70px;
-	padding-top: 220px;
+	padding-top: 120px;
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 650px;
+	min-height: 350px;
 	width: 100%;
 	
   -webkit-background-size: 100%;
@@ -145,7 +145,7 @@ h1, h2, h3, h4, h5, h6 {
 	padding-top: 10px;
 	padding-bottom: 20px;
 	letter-spacing: 4px;
-	font-size: 5.5em;
+	font-size: 3.5em;
 	font-weight: bold;
 }
 
@@ -170,6 +170,7 @@ h1, h2, h3, h4, h5, h6 {
   #headerwrap {
   	min-height: 400px;
   	padding-top: 120px;
+  	padding-bottom: 90px;
   }
 
 	#headerwrap h1 {
@@ -177,7 +178,7 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 	#headerwrap h3 {
-		font-size: 1.1em;
+		font-size: 1em;
 		width: 80%;
 		margin-left: 10%;
 	}
@@ -432,6 +433,107 @@ iframe, object, embed {
 	margin-top: 100px;
 }
 /* end maestro */
+
+/* ibm-micro */
+
+#ibm-microwrap {	
+	background: url(../img/ibm-micro-large.png) no-repeat center top;
+	margin-top: -75px;
+	padding-top: 300px;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 650px;
+	z-index: 100;
+	width: 100%;
+	
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#ibm-microwrap h1 {
+	color:#7C1C58;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	letter-spacing: 4px;
+	font-size: 80px;
+	font-weight: bold;
+}
+
+#ibm-microwrap h2 {
+	margin-top: 10px;
+	color: #7C1C58;
+}
+
+#ibm-microwrap h3 {
+	color: #7C1C58;
+}
+
+#ibm-microwrap h4 {
+	font-weight: 400;
+	color: #7C1C58;
+}
+
+#ibm-micro h1{
+	color: #7C1C58;
+}
+
+#ibm-micro h2 {
+	color: #7C1C58;
+}
+
+#ibm-micro h3 {
+	color: #7C1C58;
+}
+
+#ibm-micro h4 {
+	color: #7C1C58;
+}
+
+@media (max-width: 570px) {
+  #ibm-microwrap {
+  	min-height: 400px;
+  }
+
+  #ibm-microwrap h1 {
+  	color:#7C1C58;
+  	padding-top: 400px;
+  	padding-bottom: 20px;
+  	letter-spacing: 4px;
+  	font-size: 80px;
+  	font-weight: bold;
+  }
+
+  #ibm-microwrap h2 {
+  	margin-top: 10px;
+  }
+
+  #ibm-microwrap h4 {
+  	font-weight: 400;
+  	color: #7C1C58;
+  }
+}
+
+.body-text {
+	color: #333;
+	font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.iterations img {
+	max-height: 500px;
+}
+.top-margin {
+	margin-top: 100px;
+}
+/* end ibm-micro */
 
 
 /* life-alert */
